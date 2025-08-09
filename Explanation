@@ -1,0 +1,26 @@
+1. Data cleaning including missing values, outliers and multi-collinearity.
+We ensured price and discount columns had correct numeric types, removed duplicates, and handled missing values by removing affected rows. Outliers like the Oppo A5 were flagged via visual checks. Multi-collinearity was not applicable for this rule-based model.
+
+2. Describe your fraud detection model in elaboration.
+The model calculates discount from Actual and Selling Price and compares it to the given discount. If the difference exceeds 1% or Selling Price > Actual Price, the product is flagged “Suspicious.” This helps detect fake discounts automatically in Power BI.
+
+3. How did you select variables to be included in the model?
+We used Actual Price, Selling Price, and Discount Percentage as they directly relate to discount validation. Brand and Model were included for reporting purposes to analyze suspicious products.
+
+4. Demonstrate the performance of the model by using best set of tools.
+Power BI visuals like Card (total suspicious), Table (details), Bar Chart (by Brand), and Scatter Plot (price vs discount) clearly showed detection of anomalies, with only Oppo A5 flagged as suspicious.
+
+5. What are the key factors that predict fraudulent customer?
+Key factors include a discount mismatch over 1% and cases where Selling Price exceeds Actual Price, indicating fake or incorrect discounts.
+
+6. Do these factors make sense? If yes, How? If not, How not?
+Yes, because legitimate discounts should not exceed actual prices or differ significantly from the recorded discount. These rules logically catch data errors or fraud.
+
+7. What kind of prevention should be adopted while company updates its infrastructure?
+Implement automated validation rules to block unrealistic discounts, prevent Selling Price > Actual Price, recalculate discounts automatically, alert on discrepancies, and maintain audit logs.
+
+8. Assuming these actions have been implemented, how would you determine if they work?
+Monitor flagged suspicious cases over time, expect a decrease, conduct test uploads with errors, check customer complaints, and review audit logs regularly.
+
+Apology:
+We apologize for the delay in submission and appreciate your understanding. We have ensured the report’s accuracy despite the timeline.

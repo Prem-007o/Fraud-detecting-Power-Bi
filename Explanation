@@ -22,5 +22,3 @@ Implement automated validation rules to block unrealistic discounts, prevent Sel
 8. Assuming these actions have been implemented, how would you determine if they work?
 Monitor flagged suspicious cases over time, expect a decrease, conduct test uploads with errors, check customer complaints, and review audit logs regularly.
 
-Apology:
-We apologize for the delay in submission and appreciate your understanding. We have ensured the report’s accuracy despite the timeline.

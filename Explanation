@@ -1,3 +1,9 @@
+We took a product price list and checked if the Actual Price, Selling Price, and Discount % matched correctly.
+Using Power BI, we calculated the real discount from the prices and compared it with the discount given in the data.
+If the difference was more than 1% or if Selling Price was higher than Actual Price, we marked it as “Suspicious.”
+Only one case (Oppo A5) was flagged, meaning its discount info was wrong.
+
+
 1. Data cleaning including missing values, outliers and multi-collinearity.
 We ensured price and discount columns had correct numeric types, removed duplicates, and handled missing values by removing affected rows. Outliers like the Oppo A5 were flagged via visual checks. Multi-collinearity was not applicable for this rule-based model.
 
